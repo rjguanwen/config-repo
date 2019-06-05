@@ -1,2 +1,2 @@
 # config-repo
-config files storage
+一个配置信息存储的库。

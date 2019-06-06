@@ -14,8 +14,10 @@ spring:
   datasource:
     username: ENC(ykYC+9HTgKhPeLq42jO7mw==)
     password: ENC(uWQFqJ4DD4niAYctp8368w==)
-    url: ENC(PyvQxjoTkDDhyYKDvcKDgXrVjtjsCgukurkXsSXvN9w0Unj90iUDtPS5coJblPRiQWQ2IISl/9GPrJ2kTDqVxB/3M3auYawLa0zNvGq2WjCZWsTwY36UAVWfNcTuIyxAVBlXxIb90pjfN4Rauqcws1tJpSkoZs9vNAFA3RVAmKo=)
+    #    url: ENC(WxNL4+an5PhUgExz+F6ecgjuw9Q0SbR9m9MZ1XHhgiY/kZ825otmerUsJLTffxSu6szlqBaIa5wDo0e9NfMWOiW3As0KdhUOGLPU4uoh+a846D3zBGH9XnFgQEZPBFWF4PGUCseLEq84O472OVbiL0iZqxP7NeV8)
+    url: jdbc:mysql://localhost:3306/book_lib?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
+    #    driver-class-name: com.mysql.jdbc.Driver
     # 使用 druid 数据源
     type: com.alibaba.druid.pool.DruidDataSource
 
@@ -44,7 +46,7 @@ logging:
       rjguanwen:
         # show sql
         mapper: debug
-  file: /tmp/logs/booklib/booklibrary.log
+  file: C:/tmp/logs/booklib/booklibrary.log
 #  pattern:
 #    console: %d{yyyy/MM/dd-HH:mm:ss} [%thread] %-5level %logger- %msg%n
 #    file: %d{yyyy/MM/dd-HH:mm} [%thread] %-5level %logger- %msg%n
